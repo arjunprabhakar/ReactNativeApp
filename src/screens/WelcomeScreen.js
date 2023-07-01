@@ -1,7 +1,20 @@
 import React from "react";
-import {View,Text,StyleSheet,StatusBar} from 'react-native';
-import { Colors ,Images} from "../constants";
+import {View,Text,StyleSheet,StatusBar, TouchableOpacity} from 'react-native';
+import { Colors ,General} from "../constants";
 import { FlatList } from "react-native-gesture-handler";
+import { WelcomeCard } from "../componenets";
+import { Display } from "../utils";
+
+
+const Pagination = () =>{
+    return(
+        <View style={styles.pageContainer}>
+            <View style={styles.page}/>
+            <View style={styles.page}/>
+            <View style={styles.page}/>
+        </View>
+    )
+}
 
 
 const WelcomeScreen =()=>{
@@ -13,7 +26,23 @@ const WelcomeScreen =()=>{
         translucent
         />
         <View style={styles.WelcomelistContainer}>
-            <FlatList />
+            <FlatList 
+            data={General.WELCOME_CONTENTS}
+            keyExtractor={item => item.title}
+            horizontal
+            pagingEnabled
+            overScrollMode="never"
+            showsHorizontalScrollIndicator={false}
+            renderItem={({item}) => <WelcomeCard {...item} />}
+            />
+        </View>
+        
+        <Pagination/>
+
+        <View>
+            <TouchableOpacity>
+                <Text>SKIP</Text>
+            </TouchableOpacity>
         </View>
     </View>
     );
@@ -25,6 +54,20 @@ const styles=StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
         backgroundColor:Colors.DEFAULT_WHITE,
+    },
+    WelcomelistContainer:{
+        height:Display.setHeight(60),
+    },
+    pageContainer:{
+        flexDirection:'row',
+
+    },
+    page:{
+        height:8,
+        width:15,
+        backgroundColor:Colors.DEFAULT_GREEN,
+        borderRadius:32,
+        marginHorizontal:5,
     },
 });
 

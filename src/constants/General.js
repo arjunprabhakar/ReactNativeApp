@@ -1,17 +1,18 @@
-const WELCOME_CONTENTS = [{
-    image :'Discover',
-    title:'Discover places near you',
-    content: 'We make it simple to find your food'
+const WELCOME_CONTENTS = [
+{
+    image :'DISCOVER',
+    title:'Inamkes Learning Hub',
+    content: 'We make it simple to find your food a',
 },
 {
-    image :'Favourite',
-    title:'Discover places near you',
-    content: 'We make it simple to find your food'
+    image :'FAVOURITE',
+    title:'Welcome you',
+    content: 'We make it simple to find your food b',
 },
 {
-    image :'Deliver',
-    title:'Discover places near you',
-    content: 'We make it simple to find your food'
+    image :'DELIVER',
+    title:'Place to study',
+    content: 'We make it simple to find your food c',
 },
 ];
 
