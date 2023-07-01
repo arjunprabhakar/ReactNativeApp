@@ -1,0 +1,9 @@
+export default{
+    DEFAULT_BLACK:'#0E122B',
+    DEFAULT_GREEN:'#0A8791',
+    DEFAULT_YELLOW:'#FBA83C',
+    DEFAULT_GREY:'#C2C2CB',
+    DEFAULT_RED:'#F53920',
+    DEFAULT_WHITE:'#F8F8F8',
+    
+    };
