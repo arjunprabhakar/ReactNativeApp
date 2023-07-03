@@ -2,7 +2,7 @@ const WELCOME_CONTENTS = [
 {
     image :'DISCOVER',
     title:'Inamkes Learning Hub',
-    content: 'We make it simple to find your food a',
+    content: 'We make it simple to find your food a dfghjkhgfrdedrfgbhnytgyvhhhgvhvghvgvhghgvhvhvhvh',
 },
 {
     image :'FAVOURITE',

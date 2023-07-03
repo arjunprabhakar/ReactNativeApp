@@ -22,7 +22,7 @@ const styles=StyleSheet.create({
         width:Display.setWidth(100),
     },
     image:{
-        height:Display.setHeight(30),
+        height:Display.setHeight(15),
         width:Display.setWidth(65),
     },
     titleText:{
