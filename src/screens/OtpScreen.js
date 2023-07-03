@@ -12,8 +12,11 @@ import { TextInput } from "react-native-gesture-handler";
 
 
 
-const OtpScreen =({route:{params: {phoneNumber}}})=>{
+const OtpScreen =({route:{params: {phoneNumber}},navigation})=>{
 
+
+    //for set the each input field for one single otp 
+    //by using the "useRef" Hook
     const firstInput=useRef()
     const secondInput=useRef()
     const thirdInput=useRef()
@@ -65,7 +68,7 @@ const OtpScreen =({route:{params: {phoneNumber}}})=>{
                     placeholderTextColor="#fff"/>
             </View>
 
-            <TouchableOpacity style={styles.button} activeOpacity={0.8} >
+            <TouchableOpacity style={styles.button} activeOpacity={0.8} onPress={()=>navigation.navigate('StudentDetails')} >
                 <Text style={styles.buttonText}>Verify</Text>
             </TouchableOpacity>
         </View>
