@@ -6,13 +6,9 @@ import { Display } from "../utils";
 
 
 
-
-
-
 const Home =({navigation})=>{
 
 
-    //for set the each input field for one single otp 
    
     return(
     <View style={styles.container}>
