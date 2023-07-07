@@ -1,4 +1,5 @@
 import OtpScreen from "./OtpScreen";
+import SchoolDetails from "./SchoolDetails";
 import SigninScreen from "./SigninScreen";
 import SplashScreen from "./SplashScreen";
 import StudentDetails from "./StudentDetails";
@@ -12,4 +13,5 @@ export
        SigninScreen,
        OtpScreen,
        StudentDetails,
+       SchoolDetails
     };

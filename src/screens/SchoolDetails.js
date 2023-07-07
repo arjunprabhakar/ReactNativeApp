@@ -14,7 +14,7 @@ import { TextInput } from "react-native-gesture-handler";
 
 
 
-const StudentDetails =({navigation})=>{
+const SchoolDetails =({navigation})=>{
 const [phoneNumber,setPhoneNumber]=useState("");
 const [selectedValue, setSelectedValue] = useState(null);
 const categories=[
@@ -34,32 +34,19 @@ const categories=[
         <Text style={styles.titleText1}>Inmakes Learning Hub</Text>
         <Text style={styles.titleText2}>We will send you an OTP to verify</Text>
 
-        <Text style={styles.titleText3}>Student Details</Text>
+        <Text style={styles.titleText3}>Select your school board</Text>
         <View style={styles.mobilecontainer}>
-            <TextInput style={styles.textMobile} placeholder="Full name" 
+            <TextInput style={styles.textMobile} placeholder="Board" 
                        placeholderTextColor="#fff"
                        marginTop={40}
                        maxLength={10}/>
-             <TextInput style={styles.textMobile} placeholder="Email" 
-                       placeholderTextColor="#fff"
-                       maxLength={10}/>
-        
-
-        <TextInput style={styles.textMobile} placeholder="State" 
-                       keyboardType="number-pad"
+             <TextInput style={styles.textMobile} placeholder="Class" 
                        placeholderTextColor="#fff"
                        maxLength={10}/>
 
-
-             <TextInput style={styles.textMobile} placeholder="Pin code" 
-                       keyboardType="number-pad"
-                       placeholderTextColor="#fff"
-                       maxLength={10}/>
-            
-        
             <TouchableOpacity style={styles.button} activeOpacity={0.8} 
-                                onPress={()=>navigation.navigate('SchoolDetails')}>
-                <Text style={styles.buttonText}>Register</Text>
+                                onPress={()=>navigation.navigate('welcome')}>
+                <Text style={styles.buttonText}>Continue</Text>
             </TouchableOpacity>
         </View>
     </View>
@@ -82,7 +69,7 @@ const styles=StyleSheet.create({
     },
     mobilecontainer:{
         backgroundColor:Colors.DEFAULT_BLACK,
-        height:Display.setHeight(69),
+        height:Display.setHeight(39),
         width:Display.setWidth(100),
         marginTop:100,
         marginBottom:-270,
@@ -131,7 +118,7 @@ const styles=StyleSheet.create({
 });
 
 
-export default StudentDetails;
+export default SchoolDetails;
 
 
 
