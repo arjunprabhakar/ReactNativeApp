@@ -77,7 +77,7 @@ const WelcomeScreen =({navigation})=>{
 
 
         {welcomeListIndex === 2 ? (
-            <TouchableOpacity style={styles.gettingStartButton} activeOpacity={0.8} onPress={()=>navigation.navigate('signin')}>
+            <TouchableOpacity style={styles.gettingStartButton} activeOpacity={0.8} onPress={()=>navigation.navigate('Home')}>
                 <Text style={styles.gettingStartText}>Get Started</Text>
             </TouchableOpacity>
         ): (

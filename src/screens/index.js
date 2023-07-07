@@ -1,3 +1,4 @@
+import Home from "./Home";
 import OtpScreen from "./OtpScreen";
 import SchoolDetails from "./SchoolDetails";
 import SigninScreen from "./SigninScreen";
@@ -13,5 +14,6 @@ export
        SigninScreen,
        OtpScreen,
        StudentDetails,
-       SchoolDetails
+       SchoolDetails,
+       Home
     };
